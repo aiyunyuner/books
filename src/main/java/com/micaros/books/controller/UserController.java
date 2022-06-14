@@ -24,11 +24,26 @@ public class UserController {
 
     @PostMapping("/login")
     public int login(User user) {
-        return  userService.login(user);
+        return userService.login(user);
     }
 
     @GetMapping("/test")
     public String test() {
         return "wangcheng";
     }
+
+    @PostMapping("/add")
+    public User insertUser(User user) {
+        return userService.insertUser(user);
+    }
+
+    @PostMapping("/user")
+    public User findUserById(User user) {
+        return userService.findUserById(user);
+    }
+    @PostMapping("/update")
+    public Integer updateUserById(User user) {
+        return userService.updateUserById(user);
+    }
+
 }

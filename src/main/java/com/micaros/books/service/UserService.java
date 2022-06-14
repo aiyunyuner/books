@@ -23,4 +23,16 @@ public class UserService {
         } else
             return 0;
     }
+
+    public User insertUser(User user) {
+        return userMapper.insertUser(user);
+    }
+
+    public User findUserById(User user) {
+        return userMapper.findUserById(user);
+    }
+
+    public Integer updateUserById(User user) {
+        return userMapper.updateUserById(user);
+    }
 }
