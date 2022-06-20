@@ -11,9 +11,6 @@ spring:
   #    driver-class-name: org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy
   application:
     name: books
-  web:
-    resources:
-      static-locations: /static/
 #  mvc:
 #    pathmatch:
 #      matching-strategy: ant_path_matcher
