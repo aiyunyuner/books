@@ -26,4 +26,8 @@ public interface UserMapper {
 
     @Update("UPDATE `user` SET  `name`=#{name}, `password`=#{password}, `sex`=#{sex}, `phone`=#{phone}, `birthday`=#{birthday} WHERE uid=#{uid}")
     Integer updateUserById(User user);
+
+    //注册判断
+    @Insert("INSERT INTO `user` ( `name`, `uid`, `password`, `sex`, `phone`, `birthday`) VALUES ( #{name}, #{uid}, #{password}, #{sex}, #{phone}, #{birthday});")
+    Integer insertUserJustify(User user);
 }

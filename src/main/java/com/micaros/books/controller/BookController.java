@@ -19,4 +19,11 @@ public class BookController {
     public List<Book> getAllBooks() {
         return bookService.getAllBooks();
     }
+
+    @GetMapping("/findBook")
+    public Book findBookById(Integer id){
+        System.out.println(" id ");
+        return bookService.findBookById(id);
+    }
+
 }

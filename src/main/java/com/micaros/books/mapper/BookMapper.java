@@ -12,4 +12,7 @@ import java.util.List;
 public interface BookMapper {
     @Select("select * from book")
     List<Book> getAllBooks();
+
+    @Select("SELECT * FROM book WHERE id = #{id}")
+    Book findBookById(Integer id);
 }

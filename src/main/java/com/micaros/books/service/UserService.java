@@ -25,6 +25,7 @@ public class UserService {
     }
 
     public User insertUser(User user) {
+
         return userMapper.insertUser(user);
     }
 
@@ -35,4 +36,5 @@ public class UserService {
     public Integer updateUserById(User user) {
         return userMapper.updateUserById(user);
     }
+
 }
