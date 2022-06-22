@@ -22,7 +22,7 @@ public class BookController {
 
     @GetMapping("/findBook")
     public Book findBookById(Integer id){
-        System.out.println(" id ");
+
         return bookService.findBookById(id);
     }
 
