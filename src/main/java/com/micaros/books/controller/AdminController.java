@@ -11,13 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/admin")
 public class AdminController {
 
-    @Autowired
-    private AdminService adminService;
-
-    @PostMapping("/login")
-    public Integer login(Admin admin){
-        System.out.println(admin);
-        return adminService.login(admin);
-    }
+//    @Autowired
+//    private AdminService adminService;
+//
+//    @PostMapping("/login")
+//    public Integer login(Admin admin){
+//        System.out.println(admin);
+//        return adminService.login(admin);
+//    }
 
 }

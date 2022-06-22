@@ -8,15 +8,15 @@ import org.springframework.stereotype.Service;
 @Service
 public class AdminService {
 
-    @Autowired
-    private AdminMapper adminMapper;
-
-    public Integer login(Admin admin) {
-        Admin login = adminMapper.login(admin);
-        if (login != null) {
-            return 1;
-        }
-        return 0;
-    }
+//    @Autowired
+//    private AdminMapper adminMapper;
+//
+//    public Integer login(Admin admin) {
+//        Admin login = adminMapper.login(admin);
+//        if (login != null) {
+//            return 1;
+//        }
+//        return 0;
+//    }
 
 }
