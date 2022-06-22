@@ -6,6 +6,8 @@ import com.micaros.books.pojo.Borrow;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class BorrowInfoService {
     @Autowired
@@ -15,4 +17,11 @@ public class BorrowInfoService {
         return borrowInfoMapper.addItem(borrow);
     }
 
+    public List<Borrow> findItemByUid(String uid){
+        return borrowInfoMapper.findItemByUid(uid);
+    }
+
+    public Integer deleteItemById(Integer id){
+        return borrowInfoMapper.deleteItemById(id);
+    }
 }
