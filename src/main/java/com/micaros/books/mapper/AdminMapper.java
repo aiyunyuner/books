@@ -9,6 +9,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface AdminMapper {
 
-    @Select("select * from admin where aid=#{aid} and password=#{password} and name=#{name}")
-    Admin login(Admin admin);
+//    @Select("select * from admin where aid=#{aid} and password=#{password} and name=#{name}")
+//    Admin login(Admin admin);
 }
