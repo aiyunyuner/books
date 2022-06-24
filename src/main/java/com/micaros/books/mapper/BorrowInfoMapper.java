@@ -20,7 +20,7 @@ public interface BorrowInfoMapper {
     Integer addItem(Borrow borrow);
 
     //\根据uid查询记录
-    @Select("SELECT * FROM borrow where BorName = #{uid}")
+    @Select("SELECT * FROM borrow where D = #{uid}")
     List<Borrow> findItemByUid(String uid);
 
     //根据订单编号删除记录
