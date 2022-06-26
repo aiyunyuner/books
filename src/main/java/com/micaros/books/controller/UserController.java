@@ -39,11 +39,23 @@ public class UserController {
 
     @PostMapping("/user")
     public User findUserById(User user) {
+
+        User userById = userService.findUserById(user);
+        if (userById==null){
+            return null;
+        }
         return userService.findUserById(user);
     }
     @PostMapping("/update")
     public Integer updateUserById(User user) {
         return userService.updateUserById(user);
     }
+
+    @GetMapping ("/delete")
+
+    public Integer deleteUserById(Integer id){
+        System.out.println(id);
+        return  userService.deleteUserById(id);}
+
 
 }

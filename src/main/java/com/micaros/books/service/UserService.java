@@ -35,4 +35,11 @@ public class UserService {
     public Integer updateUserById(User user) {
         return userMapper.updateUserById(user);
     }
+
+
+    public  Integer deleteUserById(Integer  id){
+        return  userMapper.deleteUserById(id);}
+
+
+
 }

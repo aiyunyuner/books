@@ -1,12 +1,12 @@
 server:
-  port: 8080
+  port: 8089
 
 spring:
   datasource:
     username: root
     #    以零开始的密码必须写成字符串模式
     password: root
-    url: jdbc:mariadb://127.0.0.1:3309/booksystem
+    url: jdbc:mariadb://127.0.0.1:3308/booksystem
     driver-class-name: org.mariadb.jdbc.Driver
   #    driver-class-name: org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy
   application:
